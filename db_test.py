@@ -5,7 +5,7 @@ from models import Base, User
 
 
 def main():
-    Base.metadata.create_all(bind=engine)
+    Base.metadata.create_all(bind=engine) # Crea la bd a partir de la metadata (los modelos declarados en models.py)
     
     
     with get_session() as session:
